@@ -18,7 +18,9 @@ if high.isdigit() == False:
     quit()
 number = random.randint(int(low), int(high)+1)
 print(f'Guess the number between {low} and {high}')
+number_of_guesses = 0
 while True:
+    number_of_guesses += 1
     guess = int(input('Enter your guess: '))
     if guess == number:
         print('Congratulations! You have guessed the number correctly.')
@@ -28,4 +30,5 @@ while True:
     else:
         print('Your guess is too high')
 
+print(f'You have guessed the number in {number_of_guesses} attempts')
 print('Thank you for playing my number guessing game :)')
