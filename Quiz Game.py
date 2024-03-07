@@ -1,6 +1,6 @@
 print('welcome to my Quiz game on india :)')
 
-start = input('Type yes/y start and quit/q to Quit the game.\n ').lower()
+start = input('Type yes/y to start and quit/q to Quit the game.\n ').lower()
 if start not in ['yes','y']:
     print('Thank you for playing')
     quit()

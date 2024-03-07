@@ -16,7 +16,7 @@ if high.isdigit() == False:
     if high <= low:
         print('The higher limit should be greater than the lower limit')
     quit()
-number = random.randint(int(low), int(high)+1)
+number = random.randint(int(low), int(high))
 print(f'Guess the number between {low} and {high}')
 number_of_guesses = 0
 while True:
